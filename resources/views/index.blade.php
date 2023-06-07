@@ -1,3 +1,5 @@
 <x-layout>
-    Home page
+    @foreach($quotes as $quote)
+        {{ $quote->body }}<hr />
+    @endforeach
 </x-layout>
