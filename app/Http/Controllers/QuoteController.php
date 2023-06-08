@@ -12,7 +12,7 @@ class QuoteController extends Controller
     public function index()
     {
         return view('index', [
-            'quotes' => Quote::all()
+            'quotes' => Quote::paginate(10)
         ]);
     }
 
