@@ -22,7 +22,8 @@ class QuoteController extends Controller
     public function show(Quote $quote)
     {
         return view('quotes/quote', [
-            'quote' => $quote
+            'quote' => $quote,
+            'comments' => $quote->comments()->get()
         ]);
     }
 }
