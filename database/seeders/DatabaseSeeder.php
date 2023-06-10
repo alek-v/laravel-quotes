@@ -16,5 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(18)->create();
         Quote::factory(12)->create();
+
+        $this->call([CommentSeeder::class]);
     }
 }
