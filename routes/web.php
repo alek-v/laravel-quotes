@@ -14,6 +14,6 @@ use App\Http\Controllers\QuoteController;
 |
 */
 
-Route::get('/', [QuoteController::class, 'index']);
+Route::get('/', [QuoteController::class, 'index'])->name('home');
 Route::get('quote/{quote:id}', [QuoteController::class, 'show']);
-Route::get('quotes/inspirational-quotes', function() { return view('quotes.inspirational-quotes'); });
+Route::get('quotes/inspirational-quotes', function() { return view('quotes.inspirational-quotes'); })->name('inspirational-quotes');

@@ -7,10 +7,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                    <a class="nav-link{{ (request()->routeIs('home')) ? ' active' : '' }}" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/quotes/inspirational-quotes">Inspirational Quotes</a>
+                    <a class="nav-link{{ (request()->routeIs('inspirational-quotes')) ? ' active' : '' }}" aria-current="page" href="/quotes/inspirational-quotes">Inspirational Quotes</a>
                 </li>
             </ul>
             <!--
