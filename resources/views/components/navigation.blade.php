@@ -12,6 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link{{ (request()->routeIs('inspirational-quotes')) ? ' active' : '' }}" aria-current="page" href="/quotes/inspirational-quotes">Inspirational Quotes</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link{{ (request()->routeIs('vavok-quotes')) ? ' active' : '' }}" aria-current="page" href="/quotes/vavok-quotes">Quotes from api.vavok.net</a>
+                </li>
             </ul>
             <!--
             <form class="d-flex" role="search">

@@ -9,6 +9,23 @@ function getQuote() {
     http.send()
 }
 
+function getVavokQuote() {
+    let http = new XMLHttpRequest()
+    http.open('GET', '/quotes/vavok-quotes/get')
+    http.onload = function () {
+        let quote = this.response;
+        let show_quote = JSON.parse(quote)
+        let display_data = show_quote.body;
+
+        if (show_quote.author != null) {
+            display_data = display_data + '<hr />' + show_quote.author;
+        }
+
+        document.getElementById('quote').innerHTML = display_data;
+    }
+    http.send()
+}
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
