@@ -3,7 +3,7 @@ function getQuote() {
     http.open('GET', 'https://type.fit/api/quotes')
     http.onload = function () {
         let quote = this.response;
-        let show_quote = JSON.parse(quote)[getRandomInt(1, 200)]
+        let show_quote = JSON.parse(quote)[getRandomInt(1, 1643)]
         document.getElementById('quote').innerHTML = show_quote.text
     }
     http.send()
