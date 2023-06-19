@@ -15,6 +15,9 @@
                 <li class="nav-item">
                     <a class="nav-link{{ (request()->routeIs('vavok-quotes')) ? ' active' : '' }}" aria-current="page" href="/quotes/vavok-quotes">Quotes from api.vavok.net</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link{{ (request()->routeIs('vavok-quotes-cors')) ? ' active' : '' }}" aria-current="page" href="/quotes/vavok-quotes-cors">Quotes from api.vavok.net with enabled CORS</a>
+                </li>
             </ul>
             <!--
             <form class="d-flex" role="search">
