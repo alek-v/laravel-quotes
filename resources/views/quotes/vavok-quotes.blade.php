@@ -1,4 +1,4 @@
-<x-layout header_tags='<script src="/js/inspirational-quotes.js"></script>' title="Quotes from api.vavok.net">
+<x-layout header_tags='<script src="/js/inspirational-quotes.min.js"></script>' title="Quotes from api.vavok.net">
     <div class="container mt-5">
         <h1>Quotes from api.vavok.net/quotes/random</h1>
         <div class="mt-5">

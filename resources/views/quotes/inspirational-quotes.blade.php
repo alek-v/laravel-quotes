@@ -1,4 +1,4 @@
-<x-layout header_tags='<script src="/js/inspirational-quotes.js"></script>' title="Inspirational Quotes">
+<x-layout header_tags='<script src="/js/inspirational-quotes.min.js"></script>' title="Inspirational Quotes">
     <div class="container mt-5">
         <h1>Inspirational Quotes</h1>
         <div class="mt-5">
